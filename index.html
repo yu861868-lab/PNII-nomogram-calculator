@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nomogram Calculator</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="panel" id="inputs"></section>
+
+    <section class="panel results">
+      <div class="result">
+        <div class="label">12-month survival</div>
+        <div class="value" id="s1">—</div>
+      </div>
+      <div class="result">
+        <div class="label">36-month survival</div>
+        <div class="value" id="s3">—</div>
+      </div>
+      <div class="result">
+        <div class="label">60-month survival</div>
+        <div class="value" id="s5">—</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- XLSX parser (optional). If this CDN is not reachable, the page still works using embedded data. -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
